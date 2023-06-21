@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AND IMPORTS - MENU PRINCIPAL</title>
+        <link rel="stylesheet" type="text/css" href="../estilos/styles.css">
+        <link rel="stylesheet" type="text/css" href="../estilos/form.css">
+
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="titulo-principal"><h1><span class="color">AND IMPORTS</span></h1></a>
+        </header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">
+                                <div id="logo">AND IMPORTS</div>
+                            </a>
+                        </li>
+                        <li>
+                            <form class="form1">
+                                <input type="text" id="pesquisa" name="pesquisa" placeholder="O que você está buscando?" class="input1">
+                                <button type="submit" class="botao1">Buscar</button>
+                            </form>
+                        </li>
+                        </form>
+                        
+                        <li><a href="../index.html">Mais Vendidos</a></li>
+                        <li class="dropdown">
+                            <a href="../paginas/produtos.html">Produtos</a>
+                            <div class="dropdownmenu">
+                                <a href="../paginas/camisas.html">Camisas</a>
+                                <a href="../paginas/tenis.html">Tenis</a>
+                                <a href="../paginas/blusas.html">Blusas</a>
+                                <a href="../paginas/acessorios.html">Acessorios</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="../paginas/sobre.html">Sobre nós</a>
+                            <div class="dropdownmenu">
+                                <a href="../paginas/contato.html">Contatos</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+        <br>
+       
+        <main>
+                <p class="titulo-principal">Gostaria de enviar algum feedback ou entrar em contato conosco? </p>
+                <section class="formcontato">
+                    <form>
+                                <h1>Enviar feeedback ou entrar em contato</h1>
+                            <fieldset>
+                                <label for="idcheck">Contato</label>
+                                <input type="checkbox" id="idcheck1" name="idcheck" value="Check1"/>
+                                <label for="idcheck">Feedback</label>
+                                <input type="checkbox" id="idcheck2" name="idcheck" value="Check2"/>
+                            </fieldset>
+                            <fieldset>
+                                <label for="idtexto" >Nome:</label>
+                                <input type="text" id="idtexto" name="idtexto"placeholder="Seu nome"/>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="seuemail@dominio.com"/>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"/>
+                            </fieldset>
+                            <fieldset>
+                                <label for="idtextarea">Caixa de texto:</label><br>
+                                <textarea id="idtexto" name="idtexto" rows="5" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <label for="idfile">Arquivo:</label>
+                                <input type="file" id="idfile" name="idfile"/>
+                            </fieldset>
+
+                            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                        
+                            <input type="button" value="Enviar" class="limpar" onclick="CadastroCliente()">
+                            <input type="reset" value="Limpar" class="limpar"></br></br>
+                
+
+                        <br>
+                    </form>
+            </section>
+        
+            
+        </main>
+		<footer>
+            <hr>
+                <h3>Seja o primeiro a receber nossos lançamentos e novidades:</h3>
+                <form>
+                
+                        <input type="email" id="email" placeholder="E-mail:">
+                        <label for="email"></label>
+                        <button type="submit">Enviar</button>
+                </form>
+            <hr>
+			<img src="#" width="150">
+			<p class="copyright"> AND IMPORTS </p>
+		</footer>
+    </body>
+</html>

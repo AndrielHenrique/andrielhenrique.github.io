@@ -1,0 +1,47 @@
+body .formcontato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+main .formcontato{
+    text-align: center;
+    padding: 20px;
+}
+input .formcontato{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.limpar{
+    width:40%;
+    padding: 15px 0;
+    background: purple;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;   
+}
+
+.limpar:hover{
+    background-color: black;
+    transform: scale(1.2);
+}
+.checkbox {
+        margin: 20px 0;
+}
+fieldset {
+    background-color:  white;
+    border-color: black;
+}
+form label, form legend {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
