@@ -38,10 +38,43 @@ input .formcontato{
         margin: 20px 0;
 }
 fieldset {
-    background-color:  white;
+    border: 1px;
     border-color: black;
 }
 form label, form legend {
     font-size: 20px;
     margin: 0 0 10px;
+    border-radius: 50px;
+}
+
+.dadosc {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    width: 300px; /* Ajuste a largura conforme necessário */
+    display: inline-block;
+  }
+  
+.dadosc h2 {
+    margin-top: 0;
+  }
+  
+.dadosc label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+.dadosc label::after {
+    content: ":";
+  }
+  
+.dadosc span {
+    display: inline-block;
+    margin-left: 5px;
+}
+  
+.dadosc img {
+    max-width: 100%;
+    margin-top: 20px;
 }

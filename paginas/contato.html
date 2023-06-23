@@ -7,7 +7,8 @@
         <title>AND IMPORTS - MENU PRINCIPAL</title>
         <link rel="stylesheet" type="text/css" href="../estilos/styles.css">
         <link rel="stylesheet" type="text/css" href="../estilos/form.css">
-
+        <script src="../scripts/scripts.js"></script>
+        <script src="../scripts/enviar.js"></script>
     </head>
     <body>
         <header>
@@ -21,7 +22,7 @@
                             </a>
                         </li>
                         <li>
-                            <form class="form1">
+                            <form class="form1" onsubmit="redirecionarp(event)">
                                 <input type="text" id="pesquisa" name="pesquisa" placeholder="O que você está buscando?" class="input1">
                                 <button type="submit" class="botao1">Buscar</button>
                             </form>
@@ -47,53 +48,63 @@
 
                     </ul>
                 </nav>
-        <br>
-       
+        <hr><hr>
         <main>
-                <p class="titulo-principal">Gostaria de enviar algum feedback ou entrar em contato conosco? </p>
+                <p class="titulo-principal">Gostaria de enviar algum feedback ou entrar em contato? </p>
                 <section class="formcontato">
-                    <form>
-                                <h1>Enviar feeedback ou entrar em contato</h1>
-                            <fieldset>
-                                <label for="idcheck">Contato</label>
-                                <input type="checkbox" id="idcheck1" name="idcheck" value="Check1"/>
-                                <label for="idcheck">Feedback</label>
-                                <input type="checkbox" id="idcheck2" name="idcheck" value="Check2"/>
-                            </fieldset>
-                            <fieldset>
-                                <label for="idtexto" >Nome:</label>
-                                <input type="text" id="idtexto" name="idtexto"placeholder="Seu nome"/>
-                            </fieldset>
-                            
-                            <fieldset>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" placeholder="seuemail@dominio.com"/>
-                            </fieldset>
-
-                            <fieldset>
-                                <label for="telefone">Telefone:</label>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"/>
-                            </fieldset>
-                            <fieldset>
-                                <label for="idtextarea">Caixa de texto:</label><br>
-                                <textarea id="idtexto" name="idtexto" rows="5" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
-                            </fieldset>
-                            <fieldset>
-                                <label for="idfile">Arquivo:</label>
-                                <input type="file" id="idfile" name="idfile"/>
-                            </fieldset>
-
-                            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-                        
-                            <input type="button" value="Enviar" class="limpar" onclick="CadastroCliente()">
-                            <input type="reset" value="Limpar" class="limpar"></br></br>
+                    <form method="post">
+                        <fieldset><h1>Enviar feedback ou entrar em contato</h1></fieldset>
+                        <fieldset>
+                            <label for="idcheck">Contato</label>
+                            <input type="checkbox" id="idcheck1" name="idcheck" value="Check1"/>
+                            <label for="idcheck">Feedback</label>
+                            <input type="checkbox" id="idcheck2" name="idcheck" value="Check2"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="idtexto">Nome:</label>
+                            <input type="text" id="idtexto" name="idtexto" placeholder="Seu nome"/>
+                        </fieldset>
                 
+                        <fieldset>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com"/>
+                        </fieldset>
+                
+                        <fieldset>
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="idtextarea">Mensagem:</label><br>
+                            <textarea id="idtextarea" name="idtextarea" rows="5" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label for="idfile">Arquivo:</label>
+                            <input type="file" id="idfile" name="idfile"/>
+                        </fieldset>
+                
+                        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                
+                        <input type="button" value="Enviar" class="limpar" onclick="CadastroCliente()">
+                        <input type="reset" value="Limpar" class="limpar"></br></br>
 
-                        <br>
+                        <nav class="dadosc">
+                            <h2 class="formulario-titulo"><strong>Dados do formulário</strong></h2>
+                            <label for="nomec">Nome</label>
+                            <span id="nomec"></span>
+                            <label for="emailc">Email</label>
+                            <span id="emailc"></span>
+                            <label for="telefonec">Telefone</label>
+                            <span id="telefonec"></span>
+                            <label for="mensagemc">Mensagem</label>
+                            <span id="mensagemc"></span><br>
+                            <img id="imagemc" src="" alt="Imagem" />
+                        </nav>
+                        
                     </form>
-            </section>
-        
-            
+                </section>
+              
+               
         </main>
 		<footer>
             <hr>
