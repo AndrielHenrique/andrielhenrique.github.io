@@ -139,11 +139,13 @@ nav a{
 	border: 2px solid #000000;
 	border-radius: 10px;
     background-color: white;
+    transition: border-color 0.3s ease-in-out;
+
 }
 
 .produtos li:hover {
-	border-color: rgb(85, 13, 85);
     transform:rotate(-5deg);
+    animation: piscar 1s infinite;
 }
 
 .produtos li:active {
@@ -168,6 +170,7 @@ nav a{
 	font-weight: bold;
 	margin-top: 10px;
 }
+/* logo pisca pisca*/
 @keyframes color{
     25% {color:red; }
     75% {color:purple; }
@@ -200,3 +203,12 @@ nav a{
     color: blue;
     
 }
+
+
+  /* Definir a animação de piscar */
+  @keyframes piscar {
+    0% { border-color: green}
+    25% {border-color:red; }
+    75% {border-color:purple; }
+  }
+  
