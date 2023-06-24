@@ -213,3 +213,28 @@ nav a{
   }
  
   
+.botao1-search {
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.botao1:hover {
+    background-color: purple;
+}
+
+.botao1:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}   
+.mapa-conteudo {
+    display: inline;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }

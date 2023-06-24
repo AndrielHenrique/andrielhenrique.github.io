@@ -20,7 +20,8 @@ function CadastroCliente() {
     document.getElementById("mensagemc").textContent = cliente.mensagem;
    
 
-
+/* Verifica se a imagem do cliente existe e a exibe no elemento de imagem
+ com o ID "imagemc". Caso não exista, o elemento de imagem fica vazio.*/
     if (cliente.imagem) {
         var reader = new FileReader();
         reader.onload = function(event) {
