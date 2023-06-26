@@ -1,4 +1,21 @@
 @charset "UTF-8";
+@media screen and (min-width: 992px) {
+    body{
+        width: auto;
+    }
+	 .principal .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+}
 
 @media screen and (max-width: 767px) {
     body{
@@ -18,18 +35,22 @@
 
 }
 
+
 body{
     margin: 0px;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    background-image:linear-gradient(to bottom, rgb(85,13,85),white);
+    background-image:linear-gradient(to right, rgb(190, 149, 226), white,rgb(190, 149, 226), white);
     overflow-x: hidden; 
+    
 }
 
 footer{
     text-align: center;
+    background-image:url(../imagens/images.jpg);
+    
 }
 
 main{
@@ -58,7 +79,7 @@ nav li {
        
 }
 .dropdownmenu a{
-        background-color: black;
+        background-color: white;
         display: block;
 }
     
@@ -68,11 +89,11 @@ nav li {
 
 nav li a:hover{
     border-color: rgb(85, 13, 85);
-    color: rgb(85, 13, 85);
+    color: purple;
 }
 nav a{
     display: block;
-    color:rgb(255, 255, 255);
+    color:  black;
     text-decoration: none;
     text-align:center;
     padding: 20px 24px;
@@ -239,19 +260,20 @@ nav a{
   
 }
 .sidebar {
-    background-color: #f5f5f5;
+    background-image:url(../imagens/images.jpg);
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
 }
 
 .sidebar h2 {
-    color: #333;
+    color: black;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .sidebar p {
+    color: bold black;
     text-align: left;
     font-size: 16px;
     margin-bottom: 0;
@@ -259,7 +281,7 @@ nav a{
 
 .sidebar strong {
     font-weight: bold;
-    color: #666;
+    color: black;
 }
 
 .dropdownmenus {
@@ -299,7 +321,7 @@ nav a{
     cursor: pointer;
 }
 
-.produtos {
+.promo {
 	width: auto;
 	margin: 0 auto;
 	padding: 50px 0;
@@ -318,6 +340,7 @@ nav a{
 	border-radius: 10px;
     background-color: white;
     transition: border-color 0.3s ease-in-out;
+    cursor: pointer;
 
 }
 
@@ -328,4 +351,12 @@ nav a{
 
 .promo li:active {
 	border-color: rgb(39, 249, 6);	
+}
+
+.copyright{
+    color: bold black;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+    background-color: white;
 }
