@@ -72,6 +72,7 @@ nav li {
     list-style: none;
     
 }
+/*dropdown do nav*/
 .dropdownmenu {
     position: absolute;
     box-shadow: 0 0 4px white;
@@ -103,7 +104,7 @@ nav a{
     padding: 0;
    
 }
-
+/*botao de pesquisa*/
 .input1 {
     width: 200px;
     height: 30px;
@@ -250,6 +251,7 @@ nav a{
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }   
+/*links externos*/
 .mapa-conteudo {
     display: inline;
     width: auto;
@@ -257,6 +259,7 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
+    
   
 }
 .sidebar {
@@ -264,6 +267,7 @@ nav a{
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
+    box-shadow: 0 0 6px black;
 }
 
 .sidebar h2 {
@@ -283,11 +287,12 @@ nav a{
     font-weight: bold;
     color: black;
 }
-
+/*dropdown dos produtos*/
 .dropdownmenus {
     position: sticky;
     box-shadow: 0 0 4px white;
     display: none;  
+    box-shadow: 0 0 6px black;
        
 }
 .dropdownmenus a{
@@ -320,7 +325,7 @@ nav a{
 .audio{
     cursor: pointer;
 }
-
+/*promocao relampago*/
 .promo {
 	width: auto;
 	margin: 0 auto;
@@ -359,4 +364,14 @@ nav a{
     font-size: 25px;
     margin-bottom: 0;
     background-color: white;
+}
+
+.canvas1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}canvas{
+    border: 1px solid black;
+    box-shadow: 0 0 6px black;
 }

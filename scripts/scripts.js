@@ -52,3 +52,31 @@ function playAudio(audioId) {
       }
     });
   });
+  
+//canvas
+window.onload = function() {
+    var data = [50, 43, 25, 47, 54];
+    var labels = ['Camisas', 'Blusas', 'Acessórios', 'Tênis', 'Outros'];
+
+    // Configurações do gráfico
+    var canvas = document.getElementById('barChart');
+    var ctx = canvas.getContext('2d');
+    var barWidth = 50;
+    var barSpacing = 20;
+    var chartHeight = canvas.height - 30;
+    var maxValue = Math.max(...data);
+
+    // Desenhar o gráfico de barras
+    for (var i = 0; i < data.length; i++) {
+        var barHeight = (data[i] / maxValue) * chartHeight;
+        var x = i * (barWidth + barSpacing);
+        var y = canvas.height - barHeight;
+
+        ctx.fillStyle = 'rgb(190, 149, 229)';
+        ctx.fillRect(x, y, barWidth, barHeight);
+
+        // Escrever o rótulo abaixo de cada barra
+        ctx.fillStyle = 'black';
+        ctx.fillText(labels[i], x + barWidth / 2, canvas.height - 1);
+    }
+};
